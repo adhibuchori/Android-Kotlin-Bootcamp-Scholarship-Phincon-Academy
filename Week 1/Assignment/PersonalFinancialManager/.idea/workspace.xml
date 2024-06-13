@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d236ff6e-494b-46d5-a38a-aaa33e2381fb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Exercise 1/SortingMethod/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Exercise 1/SortingMethod/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Exercise 1/SortingMethod/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Exercise 1/SortingMethod/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Exercise 1/SortingMethod/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Exercise 1/SortingMethod/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Exercise 1/SortingMethod/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Exercise 1/SortingMethod/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Exercise 1/SortingMethod/SortingMethod.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Exercise 1/SortingMethod/src/sortingMethod/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Exercise 1/SortingMethod/src/sortingMethod/Sorting.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Exercise 1/SortingMethod/src/sortingMethod/SortingManager.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Exercise 1/SortingMethod/src/sortingMethod/SortingMethod.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Exercise/SortingMethod/.idea/workspace.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "adhibuchori"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/adhibuchori/Android-Kotlin-Bootcamp-Scholarship-Phincon-Academy.git",
+    "accountId": "c2468fc6-101a-4f9d-aa32-cba89e1d1929"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2hoGGhrOVkC6JrXH1siyRoAXv2l" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "C:/Users/veran/IdeaProjects/Android-Kotlin-Bootcamp-Scholarship-Phincon-Academy/Week 1/Assignment/PersonalFinancialManager/src/Main.kt"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d236ff6e-494b-46d5-a38a-aaa33e2381fb" name="Changes" comment="" />
+      <created>1718252925942</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1718252925942</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/Main.kt</url>
+          <line>11</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
