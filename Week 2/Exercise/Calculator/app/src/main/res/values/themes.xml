@@ -1,0 +1,57 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Calculator" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/primary_color</item> -->
+    </style>
+
+    <style name="Theme.Calculator" parent="Base.Theme.Calculator" />
+
+    <style name="ThemeBackground">
+        <item name="android:background">@color/display_backgorund</item>
+    </style>
+
+    <style name="ThemeColorTextEqual">
+        <item name="android:background">@color/secondary_text</item>
+    </style>
+
+    <style name="ThemeColorTextInput">
+        <item name="android:textColor">@color/primary_text</item>
+    </style>
+
+    <style name="CalculatorButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginHorizontal">8dp</item>
+        <item name="android:layout_marginVertical">8dp</item>
+        <item name="cornerRadius">25dp</item>
+        <item name="fontFamily">@font/plus_jakarta_sans_medium</item>
+        <item name="android:backgroundTint">@color/buttons_background</item>
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="AllClearButton" parent="CalculatorButton">
+        <item name="cornerRadius">25dp</item>
+        <item name="android:backgroundTint">@color/all_clear_button_background</item>
+        <item name="android:textColor">@color/all_clear_text</item>
+    </style>
+
+    <style name="ActionButton" parent="CalculatorButton">
+        <item name="android:backgroundTint">@color/action_button_background</item>
+        <item name="android:textColor">@color/action_text</item>
+    </style>
+
+    <style name="ActionOperationButton" parent="CalculatorButton">
+        <item name="android:backgroundTint">@color/action_operation_button_background</item>
+        <item name="android:textColor">@color/primary_text</item>
+    </style>
+
+    <style name="EqualButton" parent="CalculatorButton">
+        <item name="android:backgroundTint">@color/equal_button_background</item>
+        <item name="android:textColor">@color/equal_text</item>
+    </style>
+
+</resources>

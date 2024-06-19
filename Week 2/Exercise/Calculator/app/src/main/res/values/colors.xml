@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="primary_color">#2F80ED</color>
+
+    <!-- Light Color Theme -->
+    <color name="display_backgorund">#F1F2F3</color>
+
+    <color name="primary_text">#FF000000</color>
+    <color name="secondary_text">#BDBDBD</color>
+
+    <color name="action_operation_button_background">#E0E0E0</color>
+
+    <color name="action_button_background">#2F80ED</color>
+    <color name="action_text">#FFFFFFFF</color>
+
+    <color name="all_clear_button_background">#EB5757</color>
+    <color name="all_clear_text">#FFFFFFFF</color>
+
+    <color name="equal_button_background">#2F80ED</color>
+    <color name="equal_text">#FFFFFFFF</color>
+
+    <color name="buttons_background">#FFFFFFFF</color>
+
+    <!-- Night Color Theme -->
+    <color name="night_display_backgorund">#000000</color>
+
+    <color name="night_primary_text">#FFFFFF</color>
+    <color name="night_secondary_text">#FFFFFF</color>
+
+    <color name="night_action_operation_button_background">#4E505F</color>
+
+    <color name="night_action_button_background">#2F80ED</color>
+    <color name="night_action_text">#FFFFFFFF</color>
+
+    <color name="night_all_clear_button_background">#EB5757</color>
+    <color name="night_all_clear_text">#FFFFFFFF</color>
+
+    <color name="night_equal_button_background">#2F80ED</color>
+    <color name="night_equal_text">#FFFFFFFF</color>
+
+    <color name="night_buttons_background">#2E2F38</color>
+
+</resources>
