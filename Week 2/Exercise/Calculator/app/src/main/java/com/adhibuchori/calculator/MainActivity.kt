@@ -1,7 +1,6 @@
 package com.adhibuchori.calculator
 
 import android.content.res.Configuration
-import android.os.Build
 import android.os.Bundle
 import android.view.View
 import android.view.Window
@@ -114,8 +113,8 @@ class MainActivity : AppCompatActivity() {
             result = when (requireNotNull(currentOperator)) {
                 Operator.ADDITION -> getInputValue1() + percentageOfValue1
                 Operator.SUBSTTRACTION -> getInputValue1() - percentageOfValue1
-                Operator.MULTIPLICATION -> getInputValue1() * percentageOfValue1
-                Operator.DIVISION -> getInputValue1() / percentageOfValue1
+                Operator.MULTIPLICATION -> getInputValue1() * percentageOfValue2
+                Operator.DIVISION -> getInputValue1() / percentageOfValue2
             }
 
             equation.clear().append(ZERO)
