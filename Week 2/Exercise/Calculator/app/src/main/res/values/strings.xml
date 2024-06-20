@@ -23,4 +23,6 @@
     <string name="percentage">\u0025</string>
     <string name="all_clear">AC</string>
 
+    <string name="infinity">\u221E</string>
+
 </resources>

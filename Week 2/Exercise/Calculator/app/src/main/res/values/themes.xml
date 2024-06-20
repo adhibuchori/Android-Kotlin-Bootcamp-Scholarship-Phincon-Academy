@@ -30,7 +30,7 @@
         <item name="android:backgroundTint">@color/buttons_background</item>
         <item name="android:textColor">@color/primary_text</item>
         <item name="android:textSize">15sp</item>
-        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:includeFontPadding">false</item>
     </style>
 
     <style name="AllClearButton" parent="CalculatorButton">

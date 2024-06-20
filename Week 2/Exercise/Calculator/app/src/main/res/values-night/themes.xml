@@ -30,6 +30,7 @@
         <item name="android:backgroundTint">@color/night_buttons_background</item>
         <item name="android:textColor">@color/night_primary_text</item>
         <item name="android:textSize">15sp</item>
+        <item name="android:includeFontPadding">false</item>
     </style>
 
     <style name="AllClearButton" parent="CalculatorButton">

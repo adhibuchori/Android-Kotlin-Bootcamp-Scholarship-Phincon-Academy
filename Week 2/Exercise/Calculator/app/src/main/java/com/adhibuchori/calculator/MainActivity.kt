@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.view.Window
 import android.view.WindowManager
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.content.ContextCompat
@@ -51,9 +52,11 @@ class MainActivity : AppCompatActivity() {
 
         @Suppress("DEPRECATION")
         if (isNightMode()) {
-            window.decorView.systemUiVisibility = window.decorView.systemUiVisibility and View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR.inv()
+            window.decorView.systemUiVisibility =
+                window.decorView.systemUiVisibility and View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR.inv()
         } else {
-            window.decorView.systemUiVisibility = window.decorView.systemUiVisibility or View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
+            window.decorView.systemUiVisibility =
+                window.decorView.systemUiVisibility or View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
         }
     }
 
@@ -86,7 +89,12 @@ class MainActivity : AppCompatActivity() {
     private fun setNightModeIndicator() {
         if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES) {
             binding.ivNightMode.setImageResource(R.drawable.ic_light)
-            binding.cvNightMode.setCardBackgroundColor(ContextCompat.getColor(this, R.color.night_buttons_background))
+            binding.cvNightMode.setCardBackgroundColor(
+                ContextCompat.getColor(
+                    this,
+                    R.color.night_buttons_background
+                )
+            )
         } else {
             binding.ivNightMode.setImageResource(R.drawable.ic_night)
         }
@@ -154,6 +162,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun onEqualsClicked() {
         if (inputValue2 != null) {
+
             result = calculate()
             equation.clear().append(ZERO)
 
@@ -173,7 +182,16 @@ class MainActivity : AppCompatActivity() {
             Operator.ADDITION -> getInputValue1() + getInputValue2()
             Operator.SUBSTTRACTION -> getInputValue1() - getInputValue2()
             Operator.MULTIPLICATION -> getInputValue1() * getInputValue2()
-            Operator.DIVISION -> getInputValue1() / getInputValue2()
+
+            Operator.DIVISION -> {
+                if (getInputValue2() == 0.0) {
+                    Toast.makeText(this, "$result Can't Divide by Zero", Toast.LENGTH_LONG).show()
+                    -1.0
+                } else {
+                    getInputValue1() / getInputValue2()
+                }
+            }
+
         }
     }
 
@@ -185,7 +203,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun onZeroClicked() {
-        if (equation.startsWith(ZERO)) return
         onNumberClicked(ZERO)
     }
 
@@ -209,21 +226,27 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun onNumberClicked(numberText: String) {
-        if (equation.startsWith(ZERO)) {
-            equation.deleteCharAt(0)
-        } else if (equation.startsWith("$MINUS$ZERO")) {
+        if (equation.startsWith(ZERO) && equation.length == 1) {
+            equation.clear()
+        } else if (equation.startsWith("$MINUS$ZERO") && equation.length == 2) {
             equation.deleteCharAt(1)
         }
+
         equation.append(numberText)
+
         setInput()
         updateInputOnDisplay()
     }
 
     private fun setInput() {
-        if (currentOperator == null) {
-            inputValue1 = equation.toString().toDouble()
-        } else {
-            inputValue2 = equation.toString().toDouble()
+        try {
+            if (currentOperator == null) {
+                inputValue1 = equation.toString().toDouble()
+            } else {
+                inputValue2 = equation.toString().toDouble()
+            }
+        } catch (e: NumberFormatException) {
+            Toast.makeText(this, "Invalid number format", Toast.LENGTH_SHORT).show()
         }
     }
 
@@ -236,7 +259,13 @@ class MainActivity : AppCompatActivity() {
 
     private fun updateResultOnDisplay(isPercentage: Boolean = false) {
 
-        binding.tvTextInput.text = getFormattedDisplayValue(value = result)
+        val resultText = if (result == -1.0) {
+            getString(R.string.infinity)
+        } else {
+            getFormattedDisplayValue(value = result)
+        }
+
+        binding.tvTextInput.text = resultText
 
         var input2Text = getFormattedDisplayValue(value = getInputValue2())
 
