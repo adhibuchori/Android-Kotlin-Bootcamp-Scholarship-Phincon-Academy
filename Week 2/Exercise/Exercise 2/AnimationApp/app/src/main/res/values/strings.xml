@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">AnimationApp</string>
+
+    <string name="hello_dear">Hello dear,</string>
+    <string name="everything_okay">Is everything okay?</string>
+    <string name="disney_quotes">Disney Quotes</string>
+
+    <string name="quote_text">Quote Text</string>
+    <string name="quote_author">Quote Author</string>
+    <string name="quote_source">Quote Source</string>
+
+    <!-- Disney Quotes Data -->
+    <string-array name="quotes_text">
+        <item>You are my new dream</item>
+        <item>Venture outside your comfort zone. The rewards are worth it.</item>
+        <item>It’s kind of fun to the impossible</item>
+        <item>If you can dream it, you can do it</item>
+        <item>To infinity and beyond!</item>
+        <item>Loyal, brave, and true.</item>
+    </string-array>
+
+    <string-array name="quotes_author">
+        <item>Flynn Rider</item>
+        <item>Rapunzel</item>
+        <item>Walt Disney</item>
+        <item>Walt Disney</item>
+        <item>Buzz Lightyear</item>
+        <item>Mulan</item>
+    </string-array>
+
+    <string-array name="quotes_source">
+        <item>Tangled (2010)</item>
+        <item>Tangled (2010)</item>
+        <item>Walt Disney (1996)</item>
+        <item>Walt Disney (1996)</item>
+        <item>Toy Story (1995)</item>
+        <item>Mulan (1998)</item>
+    </string-array>
+
+</resources>
