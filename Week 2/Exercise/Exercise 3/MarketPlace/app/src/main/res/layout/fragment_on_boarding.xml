@@ -58,9 +58,12 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <View
+        <LinearLayout
+            android:id="@+id/v_indicators_container"
             android:layout_width="0dp"
+            android:orientation="horizontal"
             android:layout_height="match_parent"
+            android:gravity="center"
             android:layout_marginBottom="26dp"
             android:layout_weight="1" />
 
