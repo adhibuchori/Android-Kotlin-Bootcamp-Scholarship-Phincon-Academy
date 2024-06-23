@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MarketPlace</string>
+
+    <!-- Content Description -->
+    <string name="back_button_description">Back</string>
+    <string name="menu_button_description">Menu</string>
+    <string name="shopping_cart_description">Shopping Cart</string>
+    <string name="notification_description">Notifications</string>
+
+    <!-- On Boarding -->
+    <string name="join_now">Join now</string>
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+
+    <!-- Bottom Navigation -->
+    <string name="home">Home</string>
+    <string name="store">Store</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="transaction">Transaction</string>
+
+    <!-- Home -->
+    <string name="user_name">John Doe</string>
+    <string name="logout">Logout</string>
+
+    <!-- Authentication -->
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="example_email">Example: test@gmail.com</string>
+    <string name="minimum_characters">Minimum 8 characters</string>
+    <string name="login">Login</string>
+    <string name="or_register_with">or sign up with</string>
+    <string name="register">Sign up</string>
+    <string name="login_terms">
+        <font color="#49454F">By logging in here, you agree to </font>
+        <font color="#6750A4">Terms &amp; Conditions</font>
+        <font color="#49454F"> and </font>
+        <font color="#6750A4">Privacy Policy</font>
+        <font color="#49454F"> of TokoPhincon.</font>
+    </string>
+    <string name="invalid_email">Invalid email</string>
+    <string name="invalid_password">Invalid password</string>
+    <string name="profile">Profile</string>
+    <string name="done">Done</string>
+    <string name="register_terms">
+        <font color="#49454F">By registering here, you agree to</font>
+        <font color="#6750A4"> Terms &amp; Conditions</font>
+        <font color="#49454F"> and </font>
+        <font color="#6750A4">Privacy Policy</font>
+        <font color="#49454F"> of TokoPhincon.</font>
+    </string>
+    <string name="name">Name</string>
+
+    <!-- Toast -->
+
+</resources>

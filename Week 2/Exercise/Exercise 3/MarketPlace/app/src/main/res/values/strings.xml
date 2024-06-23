@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">MarketPlace</string>
+
+    <!-- Content Description -->
+    <string name="back_button_description">Kembali</string>
+    <string name="menu_button_description">Menu</string>
+    <string name="shopping_cart_description">Keranjang Belanja</string>
+    <string name="notification_description">Notifikasi</string>
+
+    <!-- On Boarding -->
+    <string name="join_now">Gabung sekarang</string>
+    <string name="skip">Lewati</string>
+    <string name="next">Selanjutnya</string>
+
+    <!-- Bottom Navigation -->
+    <string name="home">Beranda</string>
+    <string name="store">Toko</string>
+    <string name="wishlist">Daftar Keinginan</string>
+    <string name="transaction">Transaksi</string>
+
+    <!-- Home -->
+    <string name="user_name">John Doe</string>
+    <string name="logout">Keluar</string>
+
+    <!-- Authentication -->
+    <string name="email">Email</string>
+    <string name="password">Kata Sandi</string>
+    <string name="example_email">Contoh: test@gmail.com</string>
+    <string name="minimum_characters">Minimal 8 karakter</string>
+    <string name="login">Masuk</string>
+    <string name="or_register_with">atau daftar dengan</string>
+    <string name="register">Daftar</string>
+    <string name="login_terms">
+        <font color="#49454F">Dengan masuk di sini, kamu menyetujui </font>
+        <font color="#6750A4">Syarat &amp; Ketentuan</font>
+        <font color="#49454F"> serta </font>
+        <font color="#6750A4">Kebijakan Privasi</font>
+        <font color="#49454F"> TokoPhincon.</font>
+    </string>
+    <string name="invalid_email">Email tidak valid</string>
+    <string name="invalid_password">Kata sandi tidak valid</string>
+    <string name="profile">Profil</string>
+    <string name="done">Selesai</string>
+    <string name="register_terms">
+        <font color="#49454F">Dengan mendaftar di sini, kamu menyetujui</font>
+        <font color="#6750A4">Syarat &amp; Ketentuan</font>
+        <font color="#49454F"> serta </font>
+        <font color="#6750A4">Kebijakan Privasi</font>
+        <font color="#49454F"> TokoPhincon.</font>
+    </string>
+    <string name="name">Nama</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Toast -->
+
+</resources>
