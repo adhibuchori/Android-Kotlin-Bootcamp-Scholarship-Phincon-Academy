@@ -8,22 +8,22 @@
     tools:context=".ui.authentication.registerProfile.RegisterProfileFragment">
 
     <include
-        android:id="@+id/toolbar"
+        android:id="@+id/toolbar_register_profile_page"
         layout="@layout/toolbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.divider.MaterialDivider
-        android:id="@+id/toolbar_divider"
+        android:id="@+id/d_toolbar_register_profile_page"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_register_profile_page" />
 
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cv_choose_photo"
+        android:id="@+id/cv_register_profile_choose_photo"
         android:layout_width="128dp"
         android:layout_height="128dp"
         android:layout_marginTop="32dp"
@@ -31,10 +31,10 @@
         app:cardCornerRadius="100dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar_divider">
+        app:layout_constraintTop_toBottomOf="@+id/d_toolbar_register_profile_page">
 
         <ImageView
-            android:id="@+id/iv_choose_photo"
+            android:id="@+id/iv_register_page_choose_photo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -43,7 +43,7 @@
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/til_name"
+        android:id="@+id/til_register_page_name"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -51,10 +51,10 @@
         android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cv_choose_photo">
+        app:layout_constraintTop_toBottomOf="@+id/cv_register_profile_choose_photo">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/tiet_email"
+            android:id="@+id/tiet_register_page_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -65,7 +65,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/btn_register"
+        android:id="@+id/btn_register_page_register"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginHorizontal="16dp"
@@ -76,11 +76,11 @@
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/til_name"
+        app:layout_constraintTop_toBottomOf="@+id/til_register_page_name"
         tools:ignore="VisualLintButtonSize" />
 
     <TextView
-        android:id="@+id/tv_register_terms"
+        android:id="@+id/tv_register_page_register_terms"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
@@ -92,6 +92,6 @@
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_register" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_register_page_register" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

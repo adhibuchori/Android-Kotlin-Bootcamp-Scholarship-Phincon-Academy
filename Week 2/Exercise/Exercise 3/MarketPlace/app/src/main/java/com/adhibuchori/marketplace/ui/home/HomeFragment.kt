@@ -1,12 +1,10 @@
 package com.adhibuchori.marketplace.ui.home
 
 import android.os.Bundle
-import android.view.Gravity
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.Navigation
 import com.adhibuchori.marketplace.R
 import com.adhibuchori.marketplace.databinding.FragmentHomeBinding
 
@@ -30,7 +28,7 @@ class HomeFragment : Fragment() {
     }
 
     private fun setUpToolbar() {
-        with(binding.toolbar) {
+        with(binding.homePageToolbar) {
             tvToolbarTitle.text = getString(R.string.user_name)
         }
     }

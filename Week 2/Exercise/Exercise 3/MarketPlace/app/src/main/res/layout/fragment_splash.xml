@@ -8,7 +8,7 @@
     tools:context=".ui.splash.SplashFragment">
 
     <ImageView
-        android:id="@+id/iv_logo_background_green"
+        android:id="@+id/iv_splash_page_logo_background_green"
         android:layout_width="150dp"
         android:layout_height="105dp"
         android:src="@drawable/ic_logo_background_green"
@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/iv_logo_background_red"
+        android:id="@+id/iv_splash_page_logo_background_red"
         android:layout_width="120dp"
         android:layout_height="105dp"
         android:src="@drawable/ic_logo_background_red"
@@ -28,7 +28,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/iv_logo_background_yellow"
+        android:id="@+id/iv_splash_page_logo_background_yellow"
         android:layout_width="120dp"
         android:layout_height="105dp"
         android:src="@drawable/ic_logo_background_yellow"
@@ -38,7 +38,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/iv_app_logo"
+        android:id="@+id/iv_splash_page_app_logo"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:src="@drawable/ic_marketplace_logo"

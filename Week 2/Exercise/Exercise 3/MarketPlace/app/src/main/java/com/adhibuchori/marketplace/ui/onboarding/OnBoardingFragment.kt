@@ -9,7 +9,6 @@ import android.view.ViewGroup.LayoutParams.WRAP_CONTENT
 import android.widget.ImageView
 import android.widget.LinearLayout
 import androidx.core.content.ContextCompat
-import androidx.core.view.plusAssign
 import androidx.navigation.NavOptions
 import androidx.navigation.Navigation
 import androidx.viewpager2.widget.ViewPager2
@@ -49,15 +48,58 @@ class OnBoardingFragment : Fragment() {
         setUpNavigation()
         setUpIndicators()
         setCurrentIndicator(0)
+        setUpOnBoardingSlider()
+    }
 
-        binding.vpSliderOnboarding.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
-            override fun onPageSelected(position: Int) {
-                super.onPageSelected(position)
-                setCurrentIndicator(position)
+    private fun setUpOnBoardingSlider() {
+        with(binding) {
+            vpOnBoardingPageSlider.registerOnPageChangeCallback(object :
+                ViewPager2.OnPageChangeCallback() {
+                override fun onPageSelected(position: Int) {
+                    super.onPageSelected(position)
+                    setCurrentIndicator(position)
+                }
+            })
+
+            vpOnBoardingPageSlider.adapter = introSlides
+        }
+    }
+
+    private fun setUpNavigation() {
+
+        val navOptions = NavOptions.Builder()
+            .setPopUpTo(R.id.nav_graphs, true)
+            .build()
+
+        with(binding) {
+            btnOnBoardingPageJoinNow.setOnClickListener {
+                Navigation.findNavController(it).navigate(
+                    R.id.action_onBoardingFragment_to_loginFragment,
+                    null,
+                    navOptions
+                )
             }
-        })
 
-        binding.vpSliderOnboarding.adapter = introSlides
+            tvOnBoardingSkip.setOnClickListener {
+                Navigation.findNavController(it).navigate(
+                    R.id.action_onBoardingFragment_to_loginFragment,
+                    null,
+                    navOptions
+                )
+            }
+
+            tvOnBoardingNext.setOnClickListener {
+                if (vpOnBoardingPageSlider.currentItem + 1 < introSlides.itemCount) {
+                    vpOnBoardingPageSlider.currentItem += 1
+                } else {
+                    Navigation.findNavController(it).navigate(
+                        R.id.action_onBoardingFragment_to_loginFragment,
+                        null,
+                        navOptions
+                    )
+                }
+            }
+        }
     }
 
     private fun setUpIndicators() {
@@ -76,51 +118,14 @@ class OnBoardingFragment : Fragment() {
                 )
                 this?.layoutParams = layoutParams
             }
-            binding.vIndicatorsContainer.addView(indicators[i])
-        }
-    }
-
-    private fun setUpNavigation() {
-
-        val navOptions = NavOptions.Builder()
-            .setPopUpTo(R.id.nav_graphs, true)
-            .build()
-
-        with(binding) {
-            btnJoinNow.setOnClickListener {
-                Navigation.findNavController(it).navigate(
-                    R.id.action_onBoardingFragment_to_loginFragment,
-                    null,
-                    navOptions
-                )
-            }
-
-            tvSkip.setOnClickListener {
-                Navigation.findNavController(it).navigate(
-                    R.id.action_onBoardingFragment_to_loginFragment,
-                    null,
-                    navOptions
-                )
-            }
-
-            tvNext.setOnClickListener {
-                if (vpSliderOnboarding.currentItem + 1 < introSlides.itemCount) {
-                    vpSliderOnboarding.currentItem += 1
-                } else {
-                    Navigation.findNavController(it).navigate(
-                        R.id.action_onBoardingFragment_to_loginFragment,
-                        null,
-                        navOptions
-                    )
-                }
-            }
+            binding.vOnBoardingIndicatorsContainer.addView(indicators[i])
         }
     }
 
     private fun setCurrentIndicator(index: Int) {
-        val childCount = binding.vIndicatorsContainer.childCount
+        val childCount = binding.vOnBoardingIndicatorsContainer.childCount
         for (i in 0 until childCount) {
-            val imageView = binding.vIndicatorsContainer.getChildAt(i) as ImageView
+            val imageView = binding.vOnBoardingIndicatorsContainer.getChildAt(i) as ImageView
             if (i == index) {
                 imageView.setImageDrawable(
                     ContextCompat.getDrawable(

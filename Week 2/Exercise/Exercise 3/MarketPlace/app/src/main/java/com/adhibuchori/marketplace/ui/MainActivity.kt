@@ -2,11 +2,9 @@ package com.adhibuchori.marketplace.ui
 
 import android.content.res.Configuration
 import android.os.Bundle
-import android.view.Gravity
 import android.view.View
 import android.view.Window
 import android.view.WindowManager
-import android.widget.Toolbar
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat

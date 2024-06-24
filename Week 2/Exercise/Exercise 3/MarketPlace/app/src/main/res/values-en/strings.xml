@@ -32,11 +32,11 @@
     <string name="or_register_with">or sign up with</string>
     <string name="register">Sign up</string>
     <string name="login_terms">
-        <font color="#49454F">By logging in here, you agree to </font>
-        <font color="#6750A4">Terms &amp; Conditions</font>
-        <font color="#49454F"> and </font>
-        <font color="#6750A4">Privacy Policy</font>
-        <font color="#49454F"> of TokoPhincon.</font>
+        <font color="#49454F">By logging in here, you agree to</font>
+        <font color="#6750A4"><u>%1$s</u></font>
+        <font color="#49454F">and</font>
+        <font color="#6750A4"><u>%2$s</u></font>
+        <font color="#49454F">of TokoPhincon.</font>
     </string>
     <string name="invalid_email">Invalid email</string>
     <string name="invalid_password">Invalid password</string>
@@ -44,10 +44,10 @@
     <string name="done">Done</string>
     <string name="register_terms">
         <font color="#49454F">By registering here, you agree to</font>
-        <font color="#6750A4"> Terms &amp; Conditions</font>
-        <font color="#49454F"> and </font>
-        <font color="#6750A4">Privacy Policy</font>
-        <font color="#49454F"> of TokoPhincon.</font>
+        <font color="#6750A4"><u>%1$s</u></font>
+        <font color="#49454F">and</font>
+        <font color="#6750A4"><u>%2$s</u></font>
+        <font color="#49454F">of TokoPhincon.</font>
     </string>
     <string name="name">Name</string>
 

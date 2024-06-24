@@ -8,20 +8,20 @@
     tools:context=".ui.home.HomeFragment">
 
     <include
-        android:id="@+id/toolbar"
+        android:id="@+id/home_page_toolbar"
         layout="@layout/toolbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/iv_"
+        android:id="@+id/iv_home_page_greetings"
         android:layout_width="206dp"
         android:layout_height="182dp"
         android:layout_marginTop="70dp"
         android:src="@drawable/iv_greetings"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+        app:layout_constraintTop_toBottomOf="@+id/home_page_toolbar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

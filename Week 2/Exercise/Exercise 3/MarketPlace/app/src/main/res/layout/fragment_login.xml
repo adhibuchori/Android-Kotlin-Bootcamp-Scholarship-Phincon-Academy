@@ -8,22 +8,22 @@
     tools:context=".ui.authentication.login.LoginFragment">
 
     <include
-        android:id="@+id/toolbar"
+        android:id="@+id/login_page_toolbar"
         layout="@layout/toolbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.divider.MaterialDivider
-        android:id="@+id/toolbar_divider"
+        android:id="@+id/d_login_page_divider"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+        app:layout_constraintTop_toBottomOf="@+id/login_page_toolbar" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/til_email"
+        android:id="@+id/til_login_page_email"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -32,10 +32,10 @@
         app:helperText="@string/example_email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar_divider">
+        app:layout_constraintTop_toBottomOf="@+id/d_login_page_divider">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/tiet_email"
+            android:id="@+id/tiet_login_page_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -46,7 +46,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/til_password"
+        android:id="@+id/til_login_page_password"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -55,11 +55,11 @@
         app:helperText="@string/minimum_characters"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/til_email"
+        app:layout_constraintTop_toBottomOf="@+id/til_login_page_email"
         app:passwordToggleEnabled="true">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/tiet_password"
+            android:id="@+id/tiet_login_page_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -70,7 +70,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/btn_login"
+        android:id="@+id/btn_login_page_login"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginHorizontal="16dp"
@@ -81,7 +81,7 @@
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/til_password"
+        app:layout_constraintTop_toBottomOf="@+id/til_login_page_password"
         tools:ignore="VisualLintButtonSize" />
 
     <TextView
@@ -94,12 +94,12 @@
         android:text="@string/or_register_with"
         android:textColor="@color/text_black_subtitle"
         android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="@+id/btn_login"
-        app:layout_constraintStart_toStartOf="@+id/btn_login"
-        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+        app:layout_constraintEnd_toEndOf="@+id/btn_login_page_login"
+        app:layout_constraintStart_toStartOf="@+id/btn_login_page_login"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login_page_login" />
 
     <com.google.android.material.divider.MaterialDivider
-        android:id="@+id/left_divider"
+        android:id="@+id/d_login_page_left"
         android:layout_width="0dp"
         android:layout_height="1dp"
         android:layout_marginHorizontal="16dp"
@@ -109,7 +109,7 @@
         app:layout_constraintTop_toTopOf="@+id/tv_or_register_with" />
 
     <com.google.android.material.divider.MaterialDivider
-        android:id="@+id/right_divider"
+        android:id="@+id/d_login_page_right"
         android:layout_width="0dp"
         android:layout_height="1dp"
         android:layout_marginHorizontal="16dp"
@@ -119,7 +119,7 @@
         app:layout_constraintTop_toTopOf="@+id/tv_or_register_with" />
 
     <Button
-        android:id="@+id/btn_register"
+        android:id="@+id/btn_login_page_register"
         style="@style/Widget.Material3.Button.OutlinedButton"
         android:layout_width="match_parent"
         android:layout_height="48dp"
@@ -135,7 +135,7 @@
         tools:ignore="VisualLintButtonSize" />
 
     <TextView
-        android:id="@+id/tv_login_terms"
+        android:id="@+id/tv_login_page_login_terms"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
@@ -147,6 +147,6 @@
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_register" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_login_page_register" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

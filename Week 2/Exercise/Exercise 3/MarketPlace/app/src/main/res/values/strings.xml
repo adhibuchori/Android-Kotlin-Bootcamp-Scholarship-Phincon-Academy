@@ -31,11 +31,11 @@
     <string name="or_register_with">atau daftar dengan</string>
     <string name="register">Daftar</string>
     <string name="login_terms">
-        <font color="#49454F">Dengan masuk di sini, kamu menyetujui </font>
-        <font color="#6750A4">Syarat &amp; Ketentuan</font>
-        <font color="#49454F"> serta </font>
-        <font color="#6750A4">Kebijakan Privasi</font>
-        <font color="#49454F"> TokoPhincon.</font>
+        <font color="#49454F">Dengan masuk di sini, kamu menyetujui</font>
+        <font color="#6750A4"><u>%1$s</u></font>
+        <font color="#49454F">serta</font>
+        <font color="#6750A4"><u>%2$s</u></font>
+        <font color="#49454F">TokoPhincon.</font>
     </string>
     <string name="invalid_email">Email tidak valid</string>
     <string name="invalid_password">Kata sandi tidak valid</string>
@@ -43,15 +43,10 @@
     <string name="done">Selesai</string>
     <string name="register_terms">
         <font color="#49454F">Dengan mendaftar di sini, kamu menyetujui</font>
-        <font color="#6750A4">Syarat &amp; Ketentuan</font>
-        <font color="#49454F"> serta </font>
-        <font color="#6750A4">Kebijakan Privasi</font>
-        <font color="#49454F"> TokoPhincon.</font>
+        <font color="#6750A4"><u>%1$s</u></font>
+        <font color="#49454F">serta</font>
+        <font color="#6750A4"><u>%2$s</u></font>
+        <font color="#49454F">TokoPhincon.</font>
     </string>
     <string name="name">Nama</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-
-    <!-- Toast -->
-
 </resources>

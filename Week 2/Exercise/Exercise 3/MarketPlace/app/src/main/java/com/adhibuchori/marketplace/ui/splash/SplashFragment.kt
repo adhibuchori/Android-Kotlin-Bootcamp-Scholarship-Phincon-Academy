@@ -33,24 +33,26 @@ class SplashFragment : Fragment() {
     }
 
     private fun setUpAnime() {
-        animateView(binding.ivAppLogo, SCALE_X, 0f, 1f, 700L)
-        animateView(binding.ivAppLogo, SCALE_Y, 0f, 1f, 700L)
+        with(binding) {
+            animateView(ivSplashPageAppLogo, SCALE_X, 0f, 1f, 700L)
+            animateView(ivSplashPageAppLogo, SCALE_Y, 0f, 1f, 700L)
 
-        animateView(binding.ivLogoBackgroundGreen, SCALE_X, 0f, 1f, 700L)
-        animateView(binding.ivLogoBackgroundGreen, SCALE_Y, 0f, 1f, 700L)
-        animateView(binding.ivLogoBackgroundGreen, TRANSLATION_Y, 0f, -145f, 1200L)
+            animateView(ivSplashPageLogoBackgroundGreen, SCALE_X, 0f, 1f, 700L)
+            animateView(ivSplashPageLogoBackgroundGreen, SCALE_Y, 0f, 1f, 700L)
+            animateView(ivSplashPageLogoBackgroundGreen, TRANSLATION_Y, 0f, -145f, 1200L)
 
-        animateView(binding.ivLogoBackgroundRed, SCALE_X, 0f, 1f, 700L)
-        animateView(binding.ivLogoBackgroundRed, SCALE_Y, 0f, 1f, 700L)
-        animateView(binding.ivLogoBackgroundRed, TRANSLATION_Y, 0f, -60f, 1000L)
-        animateView(binding.ivLogoBackgroundRed, TRANSLATION_X, 0f, 80f, 1000L)
-        animateView(binding.ivLogoBackgroundRed, ROTATE_ANIMATION, 0f, 20f, 1200L)
+            animateView(ivSplashPageLogoBackgroundRed, SCALE_X, 0f, 1f, 700L)
+            animateView(ivSplashPageLogoBackgroundRed, SCALE_Y, 0f, 1f, 700L)
+            animateView(ivSplashPageLogoBackgroundRed, TRANSLATION_Y, 0f, -60f, 1000L)
+            animateView(ivSplashPageLogoBackgroundRed, TRANSLATION_X, 0f, 80f, 1000L)
+            animateView(ivSplashPageLogoBackgroundRed, ROTATE_ANIMATION, 0f, 20f, 1200L)
 
-        animateView(binding.ivLogoBackgroundYellow, SCALE_X, 0f, 1f, 700L)
-        animateView(binding.ivLogoBackgroundYellow, SCALE_Y, 0f, 1f, 700L)
-        animateView(binding.ivLogoBackgroundYellow, TRANSLATION_Y, 0f, -80f, 1000L)
-        animateView(binding.ivLogoBackgroundYellow, TRANSLATION_X, 0f, -65f, 1000L)
-        animateView(binding.ivLogoBackgroundYellow, ROTATE_ANIMATION, 0f, -20f, 1200L)
+            animateView(ivSplashPageLogoBackgroundYellow, SCALE_X, 0f, 1f, 700L)
+            animateView(ivSplashPageLogoBackgroundYellow, SCALE_Y, 0f, 1f, 700L)
+            animateView(ivSplashPageLogoBackgroundYellow, TRANSLATION_Y, 0f, -80f, 1000L)
+            animateView(ivSplashPageLogoBackgroundYellow, TRANSLATION_X, 0f, -65f, 1000L)
+            animateView(ivSplashPageLogoBackgroundYellow, ROTATE_ANIMATION, 0f, -20f, 1200L)
+        }
 
         Handler(requireActivity().mainLooper).postDelayed({
 
