@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.main.home.HomeFragment">
+
+    <include
+        android:id="@+id/home_page_toolbar"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_home_page_greetings"
+        android:layout_width="206dp"
+        android:layout_height="182dp"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/iv_greetings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_page_toolbar" />
+
+    <Button
+        android:id="@+id/btn_home_page_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66dp"
+        android:text="@string/logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_home_page_greetings" />
+
+    <TextView
+        android:id="@+id/tv_home_page_language_left"
+        style="@style/SwitchTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="EN"
+        app:layout_constraintBottom_toBottomOf="@+id/switch_home_page_language"
+        app:layout_constraintEnd_toStartOf="@+id/switch_home_page_language"
+        app:layout_constraintTop_toTopOf="@+id/switch_home_page_language" />
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/switch_home_page_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_home_page_logout" />
+
+    <TextView
+        android:id="@+id/tv_home_page_language_right"
+        style="@style/SwitchTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="ID"
+        app:layout_constraintBottom_toBottomOf="@+id/switch_home_page_language"
+        app:layout_constraintStart_toEndOf="@+id/switch_home_page_language"
+        app:layout_constraintTop_toTopOf="@+id/switch_home_page_language" />
+
+    <TextView
+        android:id="@+id/tv_homem_page_theme_left"
+        style="@style/SwitchTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Light"
+        app:layout_constraintBottom_toBottomOf="@+id/switch_home_page_theme"
+        app:layout_constraintEnd_toStartOf="@+id/switch_home_page_theme"
+        app:layout_constraintTop_toTopOf="@+id/switch_home_page_theme" />
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/switch_home_page_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/switch_home_page_language" />
+
+    <TextView
+        android:id="@+id/tv_home_page_theme_right"
+        style="@style/SwitchTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Dark"
+        app:layout_constraintBottom_toBottomOf="@+id/switch_home_page_theme"
+        app:layout_constraintStart_toEndOf="@+id/switch_home_page_theme"
+        app:layout_constraintTop_toTopOf="@+id/switch_home_page_theme" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

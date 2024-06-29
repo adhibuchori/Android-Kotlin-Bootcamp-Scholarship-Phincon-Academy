@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00FFFFFF</color>
+
+    <!-- App Theme -->
+    <color name="light_primary">#6750A4</color>
+    <color name="text_black">#1D1B20</color>
+    <color name="text_gray">#49454F</color>
+
+    <!-- Splash Screen -->
+    <color name="red_splash">#EA4335</color>
+    <color name="yellow_splash">#FFC107</color>
+    <color name="green_splash">#0C9D58</color>
+
+    <!-- On Boarding -->
+    <color name="indicator_inactive">#CAC4D0</color>
+    <color name="indicator_active">#6750A4</color>
+
+    <!-- Divider -->
+    <color name="divider">#CAC4D0</color>
+
+    <!--  Transaction -->
+    <color name="transaction_status_container">#EADDFF</color>
+    <color name="review_icon_container">#EADDFF</color>
+
+    <!-- Card View Stroke Detail Product -->
+    <color name="card_view_stroke_detail_product">#79747E</color>
+
+</resources>

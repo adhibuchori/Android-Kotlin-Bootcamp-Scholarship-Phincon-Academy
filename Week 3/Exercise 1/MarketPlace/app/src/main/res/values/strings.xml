@@ -1,0 +1,135 @@
+<resources>
+    <string name="app_name">MarketPlace</string>
+
+    <!-- Content Description -->
+    <string name="back_button_description">Kembali</string>
+    <string name="menu_button_description">Menu</string>
+    <string name="shopping_cart_description">Keranjang Belanja</string>
+    <string name="notification_description">Notifikasi</string>
+
+    <!-- On Boarding -->
+    <string name="join_now">Gabung sekarang</string>
+    <string name="skip">Lewati</string>
+    <string name="next">Selanjutnya</string>
+
+    <!-- Bottom Navigation -->
+    <string name="home">Beranda</string>
+    <string name="store">Toko</string>
+    <string name="wishlist">Keinginan</string>
+    <string name="transaction">Transaksi</string>
+
+    <!-- Home -->
+    <string name="user_name">John Doe</string>
+    <string name="logout">Keluar</string>
+
+    <!-- Authentication -->
+    <string name="email">Email</string>
+    <string name="password">Kata Sandi</string>
+    <string name="example_email">Contoh: test@gmail.com</string>
+    <string name="minimum_characters">Minimal 8 karakter</string>
+    <string name="login">Masuk</string>
+    <string name="or_register_with">atau daftar dengan</string>
+    <string name="register">Daftar</string>
+    <string name="login_terms">
+        <font color="#49454F">Dengan masuk di sini, kamu menyetujui</font>
+        <font color="#6750A4"><u>%1$s</u></font>
+        <font color="#49454F">serta</font>
+        <font color="#6750A4"><u>%2$s</u></font>
+        <font color="#49454F">TokoPhincon.</font>
+    </string>
+    <string name="invalid_email">Email tidak valid</string>
+    <string name="invalid_password">Kata sandi tidak valid</string>
+    <string name="profile">Profil</string>
+    <string name="done">Selesai</string>
+    <string name="register_terms">
+        <font color="#49454F">Dengan mendaftar di sini, kamu menyetujui</font>
+        <font color="#6750A4"><u>%1$s</u></font>
+        <font color="#49454F">serta</font>
+        <font color="#6750A4"><u>%2$s</u></font>
+        <font color="#49454F">TokoPhincon.</font>
+    </string>
+    <string name="name">Nama</string>
+
+    <!-- Product -->
+    <string name="product_name">Nama Produk</string>
+    <string name="product_price">Rp0</string>
+    <string name="product_store">Nama Toko</string>
+    <string name="product_review">0 | Terjual 0</string>
+    <string name="product_variant">Variasi Produk</string>
+    <string name="product_stock">Sisa 5</string>
+    <string name="product_quantity">0</string>
+    <string name="product_sold">Terjual 0</string>
+    <string name="product_rate">0 (0)</string>
+
+    <string name="product_review_icon_desc">Ikon Ulasan</string>
+    <string name="product_store_icon_desc">Product Review</string>
+    <string name="product_detail">Detail Produk</string>
+    <string name="product_select_variant">Pilih Varian</string>
+
+    <string name="product_label">Label</string>
+    <string name="product_description_title">Deskripsi Produk</string>
+    <string name="product_description">Deskripsi Produk</string>
+    <string name="buyer_review_title">Ulasan Pembeli</string>
+    <string name="see_all">Lihat Semua</string>
+    <string name="buy_now">Beli Sekarang</string>
+    <string name="rate">0</string>
+    <string name="rate_max">/5.0</string>
+    <string name="satisfied_buyers">0% Pembeli merasa puas</string>
+    <string name="rating_and_review">2 penilaian · 2 ulasan</string>
+
+    <!-- Wishlist -->
+    <string name="add_cart">+ Keranjang</string>
+
+    <!-- Review -->
+    <string name="user_review">Ulasan pengguna</string>
+    <string name="review">Ulasan</string>
+    <string name="payment_successful">Pembayaran Berhasil</string>
+    <string name="give_review">Beri Ulasan</string>
+    <string name="transaction_detail">Detail Transaksi</string>
+    <string name="transaction_id">ID Transaksi</string>
+    <string name="transaction_status">Status</string>
+    <string name="transaction_date">Tanggal</string>
+    <string name="transaction_time">Waktu</string>
+    <string name="total_payment">Total Pembayaran</string>
+
+    <string name="transaction_id_data">ID Transaksi</string>
+    <string name="transaction_status_data">Status</string>
+    <string name="transaction_date_data">Tanggal</string>
+    <string name="transaction_time_data">Waktu</string>
+    <string name="payment_method_data">Metode Pembayaran</string>
+    <string name="total_payment_data">Total Pembayaran</string>
+
+    <!-- Payment -->
+    <string name="payment_method">Metode Pembayaran</string>
+    <string name="select_payment_method">Pilih Pembayaran</string>
+    <string name="payment_status">Status</string>
+
+    <!-- Search History -->
+    <string name="search_history">Histori Pencarian</string>
+
+    <!-- Notification -->
+    <string name="notification_info">Info</string>
+    <string name="notification_status">Status Notifikasi</string>
+    <string name="row_notification_description">Deskripsi Notifikasi</string>
+    <string name="notification_time">00 Bulan 0000, 00:00</string>
+
+    <!-- Cart -->
+    <string name="cart">Keranjang</string>
+
+    <!-- Checkout -->
+    <string name="checkout">Periksa</string>
+
+    <!-- Transaction -->
+    <string name="shopping">Belanja</string>
+    <string name="shopping_date">0 Bulan 0000</string>
+    <string name="shopping_quantity">1 Barang</string>
+    <string name="total_expenditure">Total Belanja</string>
+    <string name="total_expenditure_price">Rp0</string>
+    <string name="shopping_status">Selesai</string>
+    <string name="shopping_review">Ulas</string>
+    <string name="shopping_bag_icon_desc">Ikon Tas Belanja</string>
+
+    <!-- Store -->
+    <string name="search">Cari</string>
+
+</resources>

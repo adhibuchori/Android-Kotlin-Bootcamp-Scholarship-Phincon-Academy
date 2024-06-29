@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources translatable="false">
+    <string name="dummy_data">Dummy Data</string>
+
+    <!-- Store Data -->
+    <string-array name="product_images">
+        <item>https://p2-ofp.static.pub/fes/cms/2022/04/19/cxv47wpzhjluoq8pe243eoa77wdfx2147295.png</item>
+        <item>https://dlcdnwebimgs.asus.com/gain/2BAC410F-996F-445F-BF6F-794078910162</item>
+        <item>https://asset.msi.com/resize/image/global/product/product_164729899968f28f406d125673971d1b85bbed8ca1.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png</item>
+        <item>https://img.ws.mms.shopee.co.id/id-11134201-7r98p-lw5hrwp31w9850</item>
+        <item>https://bhinneka.com/web/image/product.product/62861/image_1920?unique=b6168d9</item>
+        <item>https://images.tokopedia.net/img/cache/500-square/VqbcmM/2020/9/14/fb8d579e-1d27-4c0a-8fbf-adae756b0e2a.png</item>
+        <item>https://images.tokopedia.net/img/cache/700/OJWluG/2022/3/1/4f27e4cd-3c49-4822-ac48-980a45e828c4.jpg</item>
+        <item>https://images.tokopedia.net/img/cache/500-square/VqbcmM/2020/10/11/ce5dfa65-46d7-49dd-9a0a-1d3b90d04abf.jpg</item>
+        <item>https://dlcdnwebimgs.asus.com/gain/769aaa49-031e-4a90-b03c-3091198e95a1/w800</item>
+        <item>https://images.tokopedia.net/img/cache/500-square/VqbcmM/2023/11/1/9c35d42b-b49b-4995-bb88-215e039949b8.jpg</item>
+    </string-array>
+
+    <string-array name="product_names">
+        <item>Lenovo Legion 7 16 I7 11800 16GB 1TB SSD RTX3070 8GB Windows 11 QHD IPS</item>
+        <item>Asus ROG Strix Scar 15 G533QS Ryzen 9 5900HX 16GB 1TB SSD RTX3080 8GB Windows 11</item>
+        <item>MSI GS66 Stealth 11UH–287 15.6" FHD 300Hz 3ms i7-11800H RTX 3080 32GB 1TB SSD W11H</item>
+        <item>Razer Blade 15 Base Model – Full HD 240Hz - RTX 3060 - 16GB - 512GB SSD - Windows 10</item>
+        <item>Alienware m15 R6 15.6" QHD 240Hz Gaming Laptop – Intel Core i7 - 16GB Memory - 1TB SSD - NVIDIA GeForce RTX 3070</item>
+        <item>HP Omen 15 Gaming Laptop - Ryzen 7 5800H, 16GB RAM, 512GB SSD, RTX 3060 6GB, 15.6" 144Hz Full HD Display, Windows 11</item>
+        <item>Acer Predator Helios 300 PH315-54 15.6" FHD 144Hz i7-11800H RTX 3060 16GB 512GB SSD W11H</item>
+        <item>Dell G5 15 Gaming Laptop - Intel Core i7, 16GB RAM, 512GB SSD, NVIDIA GeForce RTX 3060 6GB GDDR6, 15.6 inch Full HD Display, Windows 10</item>
+        <item>Asus TUF Dash 15 (2021) Gaming Laptop, 15.6” 240Hz FHD IPS-Type, GeForce RTX 3060, Intel Core i7-11370H, 16GB DDR4, 1TB PCIe SSD, Thunderbolt 4, Windows 10 Home, TUF516PE-AB73</item>
+        <item>MSI Creator Z16 - 16" QHD+ Touchscreen Laptop - Intel Core i9 - 32GB Memory - 2TB SSD - NVIDIA GeForce RTX 3060 - Windows 10 Pro - Carbon Gray</item>
+    </string-array>
+
+    <string-array name="product_prices">
+        <item>Rp23.499.000</item>
+        <item>Rp27.999.000</item>
+        <item>Rp34.999.000</item>
+        <item>Rp19.999.000</item>
+        <item>Rp32.999.000</item>
+        <item>Rp18.999.000</item>
+        <item>Rp21.999.000</item>
+        <item>Rp20.999.000</item>
+        <item>Rp22.999.000</item>
+        <item>Rp39.999.000</item>
+    </string-array>
+
+    <string-array name="product_stores">
+        <item>ProStoreComputer</item>
+        <item>ProStoreComputer</item>
+        <item>ProStoreComputer</item>
+        <item>ProStoreComputer</item>
+        <item>ProStoreComputer</item>
+        <item>ProStoreComputer</item>
+        <item>ProStoreComputer</item>
+        <item>ProStoreComputer</item>
+        <item>ProStoreComputer</item>
+        <item>ProStoreComputer</item>
+    </string-array>
+
+    <string-array name="product_reviews">
+        <item>5.0 | Terjual 10</item>
+        <item>4.9 | Terjual 15</item>
+        <item>4.8 | Terjual 12</item>
+        <item>4.7 | Terjual 8</item>
+        <item>4.9 | Terjual 20</item>
+        <item>4.5 | Terjual 18</item>
+        <item>4.6 | Terjual 14</item>
+        <item>4.7 | Terjual 11</item>
+        <item>4.8 | Terjual 17</item>
+        <item>4.9 | Terjual 25</item>
+    </string-array>
+
+</resources>

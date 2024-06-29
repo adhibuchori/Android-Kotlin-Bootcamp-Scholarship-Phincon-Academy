@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="186dp"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="4dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_row_wishlist_grid_product_image"
+            android:layout_width="match_parent"
+            android:layout_height="186dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/iv_placeholder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/RoundImageViewProductImageGridStyle"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/tv_row_wishlist_grid_product_name"
+            style="@style/ProductNameTextGridStyle"
+            android:text="@string/product_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_row_wishlist_grid_product_image" />
+
+        <TextView
+            android:id="@+id/tv_row_wishlist_grid_product_price"
+            style="@style/ProductPriceTextGridStyle"
+            android:text="@string/product_price"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_row_wishlist_grid_product_name" />
+
+        <LinearLayout
+            android:id="@+id/ln_row_wishlist_grid_product_store"
+            style="@style/ProductLinearLayoutGridStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_row_wishlist_grid_product_price"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/iv_row_wishlist_grid_product_store_icon"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:contentDescription="@string/product_store_icon_desc"
+                android:src="@drawable/ic_profile"
+                app:tint="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_row_wishlist_grid_product_store"
+                style="@style/ProductStoreTextStyle"
+                android:layout_marginStart="4dp"
+                android:text="@string/product_store"
+                tools:ignore="SmallSp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_row_wishlist_grid_product_review"
+            style="@style/ProductLinearLayoutGridStyle"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ln_row_wishlist_grid_product_store"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/iv_row_wishlist_grid_product_review_icon"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:contentDescription="@string/product_review_icon_desc"
+                android:src="@drawable/ic_star" />
+
+            <TextView
+                android:id="@+id/tv_row_wishlist_grid_product_review"
+                style="@style/ProductReviewTextStyle"
+                android:layout_marginStart="4dp"
+                android:text="@string/product_review"
+                tools:ignore="SmallSp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_row_wishlist_horizontal_button"
+            style="@style/ProductLinearLayoutGridStyle"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ln_row_wishlist_grid_product_review"
+            tools:ignore="UseCompoundDrawables">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_cart_wishlist_grid_delete"
+                style="@style/Widget.Material3.Button.IconButton.Outlined"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/ic_delete" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_cart_wishlist_grid_add_cart"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/add_cart"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

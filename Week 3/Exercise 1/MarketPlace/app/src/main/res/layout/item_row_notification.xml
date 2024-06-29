@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_row_notification_image"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/iv_placeholder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/RoundImageViewNotificationImageStyle" />
+
+    <TextView
+        android:id="@+id/tv_row_notification_info"
+        style="@style/NotificationTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/notification_info"
+        app:layout_constraintStart_toEndOf="@+id/iv_row_notification_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_row_notification_status"
+        style="@style/NotificationStatusTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/notification_status"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_row_notification_image"
+        app:layout_constraintTop_toBottomOf="@+id/tv_row_notification_info" />
+
+    <TextView
+        android:id="@+id/tv_row_notification_time"
+        style="@style/NotificationTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/notification_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_row_notification_description"
+        style="@style/NotificationTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/row_notification_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_row_notification_image"
+        app:layout_constraintTop_toBottomOf="@+id/tv_row_notification_status" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

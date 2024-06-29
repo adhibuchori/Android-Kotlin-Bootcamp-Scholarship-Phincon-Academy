@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.main.payment.paymentStatus.PaymentStatusFragment">
+
+    <include
+        android:id="@+id/payment_status_page_toolbar"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_review_page_review_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="64dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payment_status_page_toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_review_page_payment_successful"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="48dp"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="@string/payment_successful"
+                android:textColor="@color/light_primary"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RatingBar
+                android:id="@+id/rb_review_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_review_page_payment_successful" />
+
+            <TextView
+                android:id="@+id/tv_review_page_give_review"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:includeFontPadding="false"
+                android:text="@string/give_review"
+                android:textColor="@color/text_gray"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rb_review_page" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_review_page_give_review"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_review_page_give_review">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiet_review_page_give_review"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="top"
+                    android:hint="@string/give_review"
+                    android:inputType="textLongMessage"
+                    android:textColor="@color/text_gray"
+                    android:textSize="12sp"
+                    tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_review_page_review_icon_container"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="-32dp"
+        app:cardBackgroundColor="@color/review_icon_container"
+        app:cardCornerRadius="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cv_review_page_review_container"
+        app:strokeColor="@color/transparent">
+
+        <ImageView
+            android:id="@+id/iv_review_page_review_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_check" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/tv_review_page_transaction_detail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:includeFontPadding="false"
+        android:text="@string/transaction_detail"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cv_review_page_review_container" />
+
+    <TableLayout
+        android:id="@+id/tl_review_page_transaction_detail_data"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/tl_review_page_button"
+        app:layout_constraintTop_toBottomOf="@+id/tv_review_page_transaction_detail"
+        tools:layout_editor_absoluteX="16dp">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tv_review_page_transaction_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_regular"
+                android:includeFontPadding="false"
+                android:text="@string/transaction_id"
+                android:textColor="@color/text_gray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_review_page_transaction_id_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:gravity="end"
+                android:includeFontPadding="false"
+                android:text="@string/transaction_id_data"
+                android:textColor="@color/text_gray"
+                android:textSize="12sp" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/tv_review_page_transaction_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_regular"
+                android:includeFontPadding="false"
+                android:text="@string/transaction_status"
+                android:textColor="@color/text_gray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_review_page_transaction_status_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:gravity="end"
+                android:includeFontPadding="false"
+                android:text="@string/transaction_status_data"
+                android:textColor="@color/text_gray"
+                android:textSize="12sp" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/tv_review_page_transaction_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_regular"
+                android:includeFontPadding="false"
+                android:text="@string/transaction_date_data"
+                android:textColor="@color/text_gray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_review_page_transaction_date_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:gravity="end"
+                android:includeFontPadding="false"
+                android:text="@string/transaction_date_data"
+                android:textColor="@color/text_gray"
+                android:textSize="12sp" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/tv_review_page_transaction_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_regular"
+                android:includeFontPadding="false"
+                android:text="@string/transaction_time"
+                android:textColor="@color/text_gray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_review_page_transaction_time_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:gravity="end"
+                android:includeFontPadding="false"
+                android:text="@string/transaction_time_data"
+                android:textColor="@color/text_gray"
+                android:textSize="12sp" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/tv_review_page_payment_method"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_regular"
+                android:includeFontPadding="false"
+                android:text="@string/payment_method"
+                android:textColor="@color/text_gray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_review_page_payment_method_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:gravity="end"
+                android:includeFontPadding="false"
+                android:text="@string/payment_method_data"
+                android:textColor="@color/text_gray"
+                android:textSize="12sp" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/tv_review_page_total_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_regular"
+                android:includeFontPadding="false"
+                android:text="@string/total_payment"
+                android:textColor="@color/text_gray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_review_page_total_payment_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:gravity="end"
+                android:includeFontPadding="false"
+                android:text="@string/total_payment_data"
+                android:textColor="@color/text_gray"
+                android:textSize="12sp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tl_review_page_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow android:layout_margin="16dp">
+
+            <Button
+                android:id="@+id/btn_review_page_done"
+                style="@style/ReviewButtonStyle"
+                android:text="@string/done" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

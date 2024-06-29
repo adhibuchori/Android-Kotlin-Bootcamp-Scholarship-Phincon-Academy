@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MarketPlace</string>
+
+    <!-- Content Description -->
+    <string name="back_button_description">Back</string>
+    <string name="menu_button_description">Menu</string>
+    <string name="shopping_cart_description">Shopping Cart</string>
+    <string name="notification_description">Notifications</string>
+
+    <!-- On Boarding -->
+    <string name="join_now">Join now</string>
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+
+    <!-- Bottom Navigation -->
+    <string name="home">Home</string>
+    <string name="store">Store</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="transaction">Transaction</string>
+
+    <!-- Home -->
+    <string name="user_name">John Doe</string>
+    <string name="logout">Logout</string>
+
+    <!-- Authentication -->
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="example_email">Example: test@gmail.com</string>
+    <string name="minimum_characters">Minimum 8 characters</string>
+    <string name="login">Login</string>
+    <string name="or_register_with">or sign up with</string>
+    <string name="register">Sign up</string>
+    <string name="login_terms">
+        <font color="#49454F">By logging in here, you agree to</font>
+        <font color="#6750A4"><u>%1$s</u></font>
+        <font color="#49454F">and</font>
+        <font color="#6750A4"><u>%2$s</u></font>
+        <font color="#49454F">of TokoPhincon.</font>
+    </string>
+    <string name="invalid_email">Invalid email</string>
+    <string name="invalid_password">Invalid password</string>
+    <string name="profile">Profile</string>
+    <string name="done">Done</string>
+    <string name="register_terms">
+        <font color="#49454F">By registering here, you agree to</font>
+        <font color="#6750A4"><u>%1$s</u></font>
+        <font color="#49454F">and</font>
+        <font color="#6750A4"><u>%2$s</u></font>
+        <font color="#49454F">of TokoPhincon.</font>
+    </string>
+    <string name="name">Name</string>
+
+    <!-- Product -->
+    <string name="product_name">Product Name</string>
+    <string name="product_price">Rp0</string>
+    <string name="product_store">Store Name</string>
+    <string name="product_review">0 | Sold 0</string>
+    <string name="product_variant">Variant Product</string>
+    <string name="product_stock">Remaining 5</string>
+    <string name="product_quantity">0</string>
+    <string name="product_sold">Sold 0</string>
+    <string name="product_rate">0 (0)</string>
+
+    <string name="product_review_icon_desc">Review Icon</string>
+    <string name="product_store_icon_desc">Product Review</string>
+    <string name="product_detail">Product Detail</string>
+    <string name="product_select_variant">Select Variant</string>
+
+    <string name="product_label">Label</string>
+    <string name="product_description_title">Product Description</string>
+    <string name="product_description">Product Description</string>
+    <string name="buyer_review_title">Buyer Review</string>
+    <string name="see_all">See All</string>
+    <string name="buy_now">Buy Now</string>
+    <string name="rate">0</string>
+    <string name="rate_max">/5.0</string>
+    <string name="satisfied_buyers">0% Buyers are satisfied</string>
+    <string name="rating_and_review">0 rating · 0 review</string>
+
+    <!-- Wishlist -->
+    <string name="add_cart">+ Cart</string>
+
+    <!-- Review -->
+    <string name="user_review">Review User</string>
+    <string name="review">Review</string>
+    <string name="payment_successful">Payment Successful</string>
+    <string name="give_review">Give Review</string>
+    <string name="transaction_detail">Transaction Detail</string>
+    <string name="transaction_id">Transaction ID</string>
+    <string name="transaction_status">Status</string>
+    <string name="transaction_date">Date</string>
+    <string name="transaction_time">Time</string>
+    <string name="total_payment">Total Payment</string>
+
+    <string name="transaction_id_data">ID Transaksi</string>
+    <string name="transaction_status_data">Status</string>
+    <string name="transaction_date_data">Tanggal</string>
+    <string name="transaction_time_data">Waktu</string>
+    <string name="payment_method_data">Metode Pembayaran</string>
+    <string name="total_payment_data">Total Pembayaran</string>
+
+    <!-- Payment -->
+    <string name="payment_method">Payment Method</string>
+    <string name="select_payment_method">Select Payment Method</string>
+    <string name="payment_status">Status</string>
+
+    <!-- Search History -->
+    <string name="search_history">Search History</string>
+
+    <!-- Notification -->
+    <string name="notification_info">Info</string>
+    <string name="notification_status">Notification Status</string>
+    <string name="row_notification_description">Notification Description</string>
+    <string name="notification_time">00 Month 0000, 00:00</string>
+
+    <!-- Cart -->
+    <string name="cart">Cart</string>
+
+    <!-- Checkout -->
+    <string name="checkout">Checkout</string>
+
+    <!-- Transaction -->
+    <string name="shopping">Shopping</string>
+    <string name="shopping_date">0 Month 0000</string>
+    <string name="shopping_quantity">1 item</string>
+    <string name="total_expenditure">Total Expenditure</string>
+    <string name="total_expenditure_price">Rp0</string>
+    <string name="shopping_status">Completed</string>
+    <string name="shopping_review">Review</string>
+    <string name="shopping_bag_icon_desc">Shopping Bag Icon</string>
+
+    <!-- Store -->
+    <string name="search">Search</string>
+
+</resources>

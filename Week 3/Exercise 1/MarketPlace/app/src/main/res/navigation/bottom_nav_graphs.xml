@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav_graphs"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.adhibuchori.marketplace.ui.main.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_wishlist"
+        android:name="com.adhibuchori.marketplace.ui.main.wishlist.WishlistFragment"
+        android:label="fragment_wishlist"
+        tools:layout="@layout/fragment_wishlist" />
+
+    <fragment
+        android:id="@+id/navigation_store"
+        android:name="com.adhibuchori.marketplace.ui.main.store.StoreFragment"
+        android:label="fragment_store"
+        tools:layout="@layout/fragment_store" />
+
+    <fragment
+        android:id="@+id/navigation_transaction"
+        android:name="com.adhibuchori.marketplace.ui.main.transaction.transaction.TransactionFragment"
+        android:label="fragment_transaction"
+        tools:layout="@layout/fragment_transaction" />
+
+</navigation>

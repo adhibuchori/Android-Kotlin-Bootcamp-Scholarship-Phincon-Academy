@@ -1,0 +1,244 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MarketPlace" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/light_primary</item>
+
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="Theme.MarketPlace" parent="Base.Theme.MarketPlace" />
+
+    <!-- Round Image View -->
+
+    <style name="RoundImageViewBackgroundLogoStyle">
+        <item name="cornerSize">10dp</item>
+    </style>
+
+    <style name="SwitchTextViewStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <!-- Product Horizontal Style -->
+    <style name="RoundImageViewProductImageStyle">
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="ProductTextStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/text_black</item>
+    </style>
+
+    <style name="ProductNameTextStyle" parent="ProductTextStyle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:maxLines">2</item>
+    </style>
+
+    <style name="ProductPriceTextStyle" parent="ProductTextStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+    </style>
+
+    <style name="ProductStoreTextStyle" parent="ProductTextStyle">
+        <item name="android:textSize">10sp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="ProductReviewTextStyle" parent="ProductTextStyle">
+        <item name="android:textSize">10sp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="ProductVariantAndStockTextStyle" parent="ProductTextStyle">
+        <item name="android:textSize">10sp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+    </style>
+
+    <style name="ProductPriceCartTextStyle" parent="ProductTextStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:layout_marginEnd">16dp</item>
+    </style>
+
+    <style name="ProductLinearLayoutStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginEnd">16dp</item>
+    </style>
+
+    <!-- Product Grid Style -->
+    <style name="RoundImageViewProductImageGridStyle">
+        <item name="cornerSizeTopRight">8dp</item>
+        <item name="cornerSizeTopLeft">8dp</item>
+    </style>
+
+    <style name="ProductLinearLayoutGridStyle" parent="ProductLinearLayoutStyle">
+        <item name="android:layout_marginEnd">8dp</item>
+    </style>
+
+    <style name="ProductNameTextGridStyle" parent="ProductNameTextStyle">
+        <item name="android:layout_marginEnd">8dp</item>
+    </style>
+
+    <style name="ProductPriceTextGridStyle" parent="ProductPriceTextStyle">
+        <item name="android:layout_marginEnd">8dp</item>
+    </style>
+
+    <!-- Notification -->
+    <style name="RoundImageViewNotificationImageStyle">
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="NotificationTextStyle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="NotificationStatusTextStyle" parent="NotificationTextStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+    </style>
+
+    <!-- Transaction -->
+    <style name="TransactionTextStyle">
+        <item name="android:textSize">10sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="TransactionShoppingTextStyle" parent="TransactionTextStyle">
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:layout_marginStart">4dp</item>
+    </style>
+
+    <style name="TransactionDateTextStyle" parent="TransactionTextStyle">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:layout_marginStart">4dp</item>
+    </style>
+
+    <style name="TransactionStatusTextStyle" parent="TransactionTextStyle">
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:textColor">@color/light_primary</item>
+        <item name="android:layout_marginHorizontal">4dp</item>
+        <item name="android:layout_marginVertical">2dp</item>
+    </style>
+
+    <style name="TransactionProductNameTextStyle" parent="TransactionTextStyle">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginHorizontal">8dp</item>
+    </style>
+
+    <style name="TransactionShoppingQuantityTextStyle" parent="TransactionTextStyle">
+        <item name="fontFamily">@font/poppins_regular</item>
+        <item name="android:layout_marginHorizontal">8dp</item>
+        <item name="android:textColor">@color/text_gray</item>
+    </style>
+
+    <style name="TransactionTotalExpenditureTextStyle" parent="TransactionTextStyle">
+        <item name="fontFamily">@font/poppins_regular</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:textColor">@color/text_gray</item>
+    </style>
+
+    <style name="TransactionTotalExpenditurePriceTextStyle" parent="TransactionTotalExpenditureTextStyle">
+        <item name="fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TransactionReviewTextStyle" parent="TransactionTextStyle">
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:layout_marginHorizontal">28dp</item>
+        <item name="android:layout_marginVertical">4dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- Product Detail -->
+    <style name="ProductDetailTextStyle">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/text_gray</item>
+    </style>
+
+    <style name="ProductDetailTextLargeStyle" parent="ProductDetailTextStyle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+    </style>
+
+    <style name="ProductDetailTextTitleStyle" parent="ProductDetailTextStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="ProductDetailTextSubtitleStyle" parent="ProductDetailTextStyle">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="ProductDetailTextBodyStyle" parent="ProductDetailTextStyle">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="ProductDetailButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="ProductDetailOutlinedButtonStyle" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Review -->
+    <style name="ReviewButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Search -->
+    <style name="OutlinedSearchBarCorner" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+
+    <style name="OutlinedSearchBarStyle" parent="Widget.Material3.SearchBar.Outlined">
+        <item name="shapeAppearanceOverlay">@style/OutlinedSearchBarCorner</item>
+    </style>
+
+</resources>
