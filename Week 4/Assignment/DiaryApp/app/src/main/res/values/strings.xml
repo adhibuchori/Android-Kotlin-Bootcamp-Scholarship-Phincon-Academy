@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">DiaryApp</string>
+
+    <!-- Home Page -->
+    <string name="app_gretings">Welcome to Diary App</string>
+    <string name="all_tasks">All Tasks</string>
+    <string name="incomplete_tasks">Incomplete</string>
+    <string name="completed_tasks">Completed</string>
+    <string name="diary_title_data">Diary Title</string>
+    <string name="diary_description_data">Diary Description</string>
+    <string name="diary_day_data">Day</string>
+    <string name="diary_date_data">00</string>
+    <string name="diary_month_data">Month</string>
+    <string name="diary_status">Diary Status</string>
+    <string name="dialog_delete_task_question">Are you sure you want to delete your diary?</string>
+    <string name="button_dialog_yes">Yes</string>
+    <string name="button_dialog_no">No</string>
+    <string name="fab_add_task">Add Task</string>
+
+    <!-- Item Dialog Customize Task -->
+    <string name="add_task_title">Add Task</string>
+    <string name="edit_task_title">Edit Task</string>
+    <string name="customize_task_title">Customize Task</string>
+    <string name="customize_diary_title">Title</string>
+    <string name="customize_diary_subtitle">Subtitle</string>
+    <string name="customize_diary_description">Description</string>
+    <string name="customize_diary_due_date">Due Date</string>
+    <string name="customize_diary_due_date_helper_text">MM/DD/YYYY</string>
+
+    <!-- Content Description -->
+    <string name="status_icon_description">Status Icon</string>
+    <string name="more_icon_description">More Icon</string>
+    <string name="close_icon_description">Close Icon</string>
+    <string name="delete_icon_description">Delete Icon</string>
+    <string name="tab_layout_description">Tab Layout</string>
+    <string name="dialog_confirmation_description">Dialog Confirmation</string>
+    <string name="dialog_customize_task_diary_title_description">Dialog Customize Task Diary Title</string>
+
+    <!-- Hint -->
+    <string name="diary_title_hint">Title</string>
+    <string name="diary_subtitle_hint">Subtitle</string>
+    <string name="diary_description_hint">Task Description</string>
+    <string name="diary_date_hint">Date</string>
+
+    <!-- Tab Layout -->
+    <string name="tab_incomplete">Incomplete</string>
+    <string name="tab_completed">Complete</string>
+
+    <!-- Toast -->
+    <string name="empty">Field can not be blank</string>
+    <string name="added">One item added successfully</string>
+    <string name="already_checked">This item is already checked and cannot be unchecked.</string>
+</resources>

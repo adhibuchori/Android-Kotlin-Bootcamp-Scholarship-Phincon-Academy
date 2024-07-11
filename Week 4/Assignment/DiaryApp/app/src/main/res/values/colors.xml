@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- App Theme Color -->
+    <color name="colorPrimary">#048E77</color>
+    <color name="gray">#828282</color>
+    <color name="dark_gray">#49454F</color>
+</resources>
