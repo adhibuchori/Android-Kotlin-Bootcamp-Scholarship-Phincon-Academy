@@ -38,6 +38,6 @@ Personal Finance Manager is a program designed to assist users in managing their
 
 ## Code Running Tutorial
 <div align="center">
-  <img src="https://drive.google.com/uc?id=1zbDAWvf7_HUvY5GJ2Y9_W34d7V9HMWKf" alt="First Code Explanation">
+  <img src="https://drive.google.com/uc?id=1zbDAWvf7_HUvY5GJ2Y9_W34d7V9HMWKf" alt="Code Running Tutorial">
   <p>Figure 4. Code Running Tutorial.</p>
 </div>
