@@ -39,3 +39,6 @@ Manage UI-related data in a lifecycle-conscious way, storing and processing the 
 ### Additional Libraries:
 - **Kotlin Coroutines:** For managing background threads to ensure smooth and responsive UI interactions.
 - **Android Jetpack Libraries:** Including LiveData and Lifecycle for reactive programming and lifecycle-aware components.
+
+## App Download Link
+You can download the Waste Wizard application from Google Drive [link here](https://drive.google.com/file/d/1HMtD4Wcqq_OKf2lxQkI_FZhg_nsmv-a8/view?usp=drive_link).
