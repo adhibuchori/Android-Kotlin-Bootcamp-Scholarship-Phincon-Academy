@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="payment_method_icon_width">48dp</dimen>
+    <dimen name="payment_method_icon_height">15dp</dimen>
+</resources>

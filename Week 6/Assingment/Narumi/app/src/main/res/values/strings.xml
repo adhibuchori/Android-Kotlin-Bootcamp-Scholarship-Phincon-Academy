@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">Narumi</string>
+    <string name="app_tagline">Explore and Discover the World</string>
+    <string name="app_copyright">© 2024 adhibuchori Personal Project</string>
+
+    <!-- Content Description -->
+    <string name="iv_login_page_app_logo_description">Narumi App Logo</string>
+    <string name="iv_splash_page_app_logo_description">Narumi App Logo</string>
+    <string name="civ_register_page_add_photo_background_icon_description">Background Icon for Adding a Photo</string>
+    <string name="iv_register_page_add_photo_icon_description">Button to Add a Photo</string>
+    <string name="iv_register_page_profile_image_placeholder_description">Placeholder for the Profile Image</string>
+    <string name="iv_item_row_payment_method_image_description">Placeholder for the Payment Method Image</string>
+    <string name="iv_register_page_arrow_back_icon_description">Arrow Back Icon</string>
+    <string name="toolbar_arrow_back_icon_description">Arrow Back Icon</string>
+    <string name="iv_item_row_payment_method_arrow_next_icon_description">Arrow Back Icon</string>
+    <string name="iv_item_row_trip_arrow_next_icon_description">Arrow Back Icon</string>
+    <string name="iv_item_row_history_arrow_next_icon_description">Arrow Back Icon</string>
+    <string name="iv_item_row_trip_location_icon_description">Location Back Icon</string>
+    <string name="iv_item_row_popular_destination_location_icon_description">Location Back Icon</string>
+    <string name="iv_profile_page_profile_picture_description">Profile Picture</string>
+    <string name="iv_profile_page_rectangle_dash_description">Rectangle Dash</string>
+    <string name="siv_item_row_history_image_trip_description">Image Trip</string>
+    <string name="iv_slider_on_boarding_description">Image On Boarding</string>
+
+    <!-- On Boarding -->
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+    <string name="first_on_boarding_title">Choose Your Destination</string>
+    <string name="second_on_boarding_title">Begin the Adventure</string>
+    <string name="first_on_boarding_description">Discover unforgettable adventures with a variety of exciting destinations.</string>
+    <string name="second_on_boarding_description">Get ready for an amazing adventure with surprises around every corner.</string>
+
+    <!-- Authentication -->
+    <string name="login">Login</string>
+    <string name="login_description">Let’s Discover the World</string>
+    <string name="register">Register</string>
+    <string name="register_description">Register and explore</string>
+    <string name="input_profile_picture">Input Your Profile Picture</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+
+    <string name="no_account">
+        <font>Do not have an account?</font>
+        <font color="#E67E9E"><u>%1$s</u></font>
+    </string>
+
+    <string name="have_account">
+        <font>Already have an account?</font>
+        <font color="#E67E9E"><u>%1$s</u></font>
+    </string>
+
+    <!-- Bottom Navigation -->
+    <string name="navigation_home">Home</string>
+    <string name="navigation_history">History</string>
+    <string name="navigation_profile">Profile</string>
+
+    <!-- Profile -->
+    <string name="username_data">とっとこハム太郎</string>
+    <string name="email_data">hamutaro@gmail.com</string>
+    <string name="logout">Logout</string>
+
+    <!-- Item Row History -->
+    <string name="trip_name">Trip Name</string>
+    <string name="trip_location">Trip Location</string>
+    <string name="trip_order_date">Order Date: Trip Order Date</string>
+    <string name="trip_duration_title">Trip Duration</string>
+    <string name="trip_duration">0 Days</string>
+    <string name="trip_cost">$1200</string>
+
+    <!-- Home -->
+    <string name="welcome_message">Welcome, %s</string>
+    <string name="explore_message">Explore the best places in the world!</string>
+    <string name="search_your_trip">Search your trip</string>
+    <string name="popular_destination">Popular Destination</string>
+
+    <!-- Tab Layout -->
+    <string name="tab_all">All</string>
+    <string name="tab_popular">Popular</string>
+    <string name="tab_recommended">Recommended</string>
+
+    <!--  Detail Trip  -->
+    <string name="trip_description">Trip Description</string>
+    <string name="trip_description_title">Trip Description Title</string>
+    <string name="book_now">Book Now</string>
+    <string name="trip_date_title">Trip Date</string>
+    <string name="trip_date">20 Juni 2025</string>
+    <string name="trip_cost_title">Trip Cost</string>
+
+    <!-- Checkout -->
+    <string name="trip_count">1</string>
+    <string name="transaction_detail">Transaction Detail</string>
+    <string name="trip_name_title">Trip Name</string>
+    <string name="trip_location_title">Trip Location</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="choose_payment_method">Choose Payment Method</string>
+    <string name="pay">Pay</string>
+    <string name="checkout">Checkout</string>
+    <string name="item_removed">Trip Removed</string>
+
+    <!-- Payment Method -->
+    <string name="virtual_account_title">Virtual Account</string>
+    <string name="instant_payment_title">Instant Payment</string>
+    <string name="bank_transfer_title">Instant Payment</string>
+
+</resources>

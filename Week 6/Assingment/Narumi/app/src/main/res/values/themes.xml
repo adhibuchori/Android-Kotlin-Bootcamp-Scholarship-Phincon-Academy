@@ -1,0 +1,67 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Narumi" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorSecondaryContainer">@color/color_primary_darker</item>
+
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="Theme.Narumi" parent="Base.Theme.Narumi" />
+
+    <!-- Round Image View -->
+    <style name="RoundImageViewStyle">
+        <item name="cornerSize">10dp</item>
+    </style>
+
+    <style name="RoundImageViewDetailStyle">
+        <item name="cornerSizeTopRight">30dp</item>
+        <item name="cornerSizeTopLeft">30dp</item>
+    </style>
+
+    <!-- Search Bar -->
+    <style name="OutlinedSearchBarCorner" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">100dp</item>
+    </style>
+
+    <style name="OutlinedSearchBarStyle" parent="Widget.Material3.SearchBar.Outlined">
+        <item name="shapeAppearanceOverlay">@style/OutlinedSearchBarCorner</item>
+    </style>
+
+    <!-- Text View -->
+    <style name="NarumiTextViewStyle">
+        <item name="android:fontFamily">@font/plus_jakarta_sans_regular</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="NarumiTextViewStyle.DisplaySmall" parent="NarumiTextViewStyle">
+        <item name="android:textSize">40sp</item>
+    </style>
+
+    <style name="NarumiTextViewStyle.HeadlineLarge" parent="NarumiTextViewStyle">
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <style name="NarumiTextViewStyle.HeadlineSmall" parent="NarumiTextViewStyle">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="NarumiTextViewStyle.BodyLarge" parent="NarumiTextViewStyle">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="NarumiTextViewStyle.BodyMedium" parent="NarumiTextViewStyle">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="NarumiTextViewStyle.BodySmall" parent="NarumiTextViewStyle">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="NarumiTextViewStyle.TabLayout" parent="NarumiTextViewStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/plus_jakarta_sans_medium</item>
+    </style>
+
+</resources>

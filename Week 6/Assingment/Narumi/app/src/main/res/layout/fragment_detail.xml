@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.main.detail.DetailFragment">
+
+    <ImageView
+        android:id="@+id/iv_detail_page_trip_image"
+        android:layout_width="match_parent"
+        android:layout_height="430dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/iv_trip_image_01"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_detail_page_arrow_back_icon_container"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@android:color/transparent">
+
+        <ImageView
+            android:id="@+id/iv_detail_page_arrow_back_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_arrow_back" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_detail_page_container_curved"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_detail_page_trip_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shapeAppearanceOverlay="@style/RoundImageViewDetailStyle" />
+
+    <TextView
+        android:id="@+id/tv_detail_page_trip_name"
+        style="@style/NarumiTextViewStyle.HeadlineSmall"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/plus_jakarta_sans_bold"
+        android:maxLines="1"
+        android:text="@string/trip_name"
+        android:textColor="@color/neutral_40"
+        app:layout_constraintEnd_toStartOf="@+id/tv_detail_page_trip_cost"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_detail_page_container_curved" />
+
+    <ImageView
+        android:id="@+id/iv_detail_page_location_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:src="@drawable/ic_location"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_detail_page_trip_location"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_detail_page_trip_location"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/tv_detail_page_trip_location"
+        style="@style/NarumiTextViewStyle.BodySmall"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/trip_location"
+        android:textColor="@color/neutral_40"
+        app:layout_constraintEnd_toStartOf="@+id/tv_detail_page_trip_cost"
+        app:layout_constraintStart_toEndOf="@+id/iv_detail_page_location_icon"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detail_page_trip_name" />
+
+    <TextView
+        android:id="@+id/tv_detail_page_trip_cost_title"
+        style="@style/NarumiTextViewStyle.BodySmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:text="@string/trip_cost_title"
+        android:textColor="@color/neutral_30"
+        app:layout_constraintEnd_toEndOf="@+id/iv_detail_page_container_curved"
+        app:layout_constraintTop_toTopOf="@+id/iv_detail_page_container_curved" />
+
+    <TextView
+        android:id="@+id/tv_detail_page_trip_cost"
+        style="@style/NarumiTextViewStyle.HeadlineSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="25dp"
+        android:fontFamily="@font/plus_jakarta_sans_bold"
+        android:text="@string/trip_cost"
+        android:textColor="@color/color_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detail_page_trip_cost_title"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/tv_detail_page_trip_description_title"
+        style="@style/NarumiTextViewStyle.BodySmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/trip_description_title"
+        android:textColor="@color/neutral_30"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detail_page_trip_location" />
+
+    <TextView
+        android:id="@+id/tv_detail_page_trip_description"
+        style="@style/NarumiTextViewStyle.BodyMedium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="10dp"
+        android:lineSpacingMultiplier="1.5"
+        android:text="@string/trip_description"
+        android:textColor="@color/neutral_40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detail_page_trip_description_title" />
+
+    <TextView
+        android:id="@+id/tv_detail_page_trip_duration_title"
+        style="@style/NarumiTextViewStyle.BodySmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/trip_duration_title"
+        android:textColor="@color/neutral_30"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detail_page_trip_description" />
+
+    <ImageView
+        android:id="@+id/iv_detail_page_trip_duration_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/ic_trip_duration"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detail_page_trip_duration_title" />
+
+    <TextView
+        android:id="@+id/tv_detail_page_trip_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/plus_jakarta_sans_bold"
+        android:text="@string/trip_duration"
+        android:textColor="@color/neutral_40"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_detail_page_trip_duration_icon"
+        app:layout_constraintStart_toEndOf="@+id/iv_detail_page_trip_duration_icon"
+        app:layout_constraintTop_toTopOf="@+id/iv_detail_page_trip_duration_icon" />
+
+    <TextView
+        android:id="@+id/tv_detail_page_trip_date_title"
+        style="@style/NarumiTextViewStyle.BodySmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/trip_date_title"
+        android:textColor="@color/neutral_30"
+        app:layout_constraintStart_toEndOf="@+id/tv_detail_page_trip_duration"
+        app:layout_constraintTop_toTopOf="@+id/tv_detail_page_trip_duration_title" />
+
+    <ImageView
+        android:id="@+id/iv_detail_page_trip_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/ic_trip_date"
+        app:layout_constraintStart_toStartOf="@+id/tv_detail_page_trip_date_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detail_page_trip_date_title" />
+
+    <TextView
+        android:id="@+id/tv_detail_page_trip_date"
+        style="@style/NarumiTextViewStyle.BodyMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/plus_jakarta_sans_bold"
+        android:text="@string/trip_date"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_detail_page_trip_date"
+        app:layout_constraintStart_toEndOf="@+id/iv_detail_page_trip_date"
+        app:layout_constraintTop_toTopOf="@+id/iv_detail_page_trip_date" />
+
+    <LinearLayout
+        android:id="@+id/ln_detail_page_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btn_detail_page_book_now"
+            style="@style/NarumiTextViewStyle.BodyMedium"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/plus_jakarta_sans_medium"
+            android:text="@string/book_now"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/til_login_page_password"
+            tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck,VisualLintButtonSize" />
+
+        <TextView
+            android:id="@+id/tv_detail_page_copyright"
+            style="@style/NarumiTextViewStyle.BodySmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/app_copyright"
+            android:textColor="@color/neutral_20"
+            tools:ignore="TextContrastCheck" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

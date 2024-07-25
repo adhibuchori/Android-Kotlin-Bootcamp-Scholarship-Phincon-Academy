@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.profile.ProfileFragment">
+
+    <include
+        android:id="@+id/profile_page_toolbar"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_profile_page_rectangle_dash"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="160dp"
+        android:contentDescription="@string/iv_profile_page_rectangle_dash_description"
+        android:src="@drawable/iv_rectangle_dash"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_page_toolbar" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_profile_page_profile_picture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/iv_profile_page_profile_picture_description"
+        android:src="@drawable/profile_picture"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_profile_page_rectangle_dash"
+        app:layout_constraintEnd_toEndOf="@+id/iv_profile_page_rectangle_dash"
+        app:layout_constraintStart_toStartOf="@+id/iv_profile_page_rectangle_dash"
+        app:layout_constraintTop_toTopOf="@+id/iv_profile_page_rectangle_dash"
+        app:shapeAppearanceOverlay="@style/RoundImageViewStyle" />
+
+    <TextView
+        android:id="@+id/tv_profile_page_copyright"
+        style="@style/NarumiTextViewStyle.BodySmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/app_copyright"
+        android:textColor="@color/neutral_20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/tv_profile_page_username_data"
+        style="@style/NarumiTextViewStyle.BodyLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/plus_jakarta_sans_semi_bold"
+        android:text="@string/username_data"
+        android:textColor="@color/neutral_40"
+        app:layout_constraintEnd_toEndOf="@+id/iv_profile_page_rectangle_dash"
+        app:layout_constraintStart_toStartOf="@+id/iv_profile_page_rectangle_dash"
+        app:layout_constraintTop_toBottomOf="@+id/iv_profile_page_rectangle_dash" />
+
+    <TextView
+        android:id="@+id/tv_profile_page_email_data"
+        style="@style/NarumiTextViewStyle.BodySmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/email_data"
+        android:textColor="@color/neutral_30"
+        app:layout_constraintEnd_toEndOf="@+id/tv_profile_page_username_data"
+        app:layout_constraintStart_toStartOf="@+id/tv_profile_page_username_data"
+        app:layout_constraintTop_toBottomOf="@+id/tv_profile_page_username_data" />
+
+    <Button
+        android:id="@+id/btn_profile_page_logout"
+        style="@style/NarumiTextViewStyle.BodyMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/plus_jakarta_sans_medium"
+        android:text="@string/logout"
+        app:layout_constraintEnd_toEndOf="@+id/tv_profile_page_email_data"
+        app:layout_constraintStart_toStartOf="@+id/tv_profile_page_email_data"
+        app:layout_constraintTop_toBottomOf="@+id/tv_profile_page_email_data"
+        tools:ignore="TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

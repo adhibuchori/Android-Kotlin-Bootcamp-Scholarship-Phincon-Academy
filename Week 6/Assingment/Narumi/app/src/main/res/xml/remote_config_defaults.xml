@@ -1,0 +1,6 @@
+<defaultsMap>
+    <entry>
+        <key>payment_list</key>
+        <value>{ "code": 200, "message": "OK", "data": [] }</value>
+    </entry>
+</defaultsMap>

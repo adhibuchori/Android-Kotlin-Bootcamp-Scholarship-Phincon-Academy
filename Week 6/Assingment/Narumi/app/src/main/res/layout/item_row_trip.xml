@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="8dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/siv_item_row_trip_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/iv_trip_image_01"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/RoundImageViewStyle" />
+
+    <TextView
+        android:id="@+id/tv_item_row_trip_name"
+        style="@style/NarumiTextViewStyle.BodyLarge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="3dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/plus_jakarta_sans_bold"
+        android:maxLines="1"
+        android:text="@string/trip_name"
+        android:textColor="@color/neutral_40"
+        app:layout_constraintEnd_toEndOf="@+id/tv_item_row_trip_location"
+        app:layout_constraintStart_toEndOf="@+id/siv_item_row_trip_image"
+        app:layout_constraintTop_toTopOf="@+id/siv_item_row_trip_image" />
+
+    <ImageView
+        android:id="@+id/iv_item_row_trip_location_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/iv_item_row_trip_location_icon_description"
+        android:src="@drawable/ic_location"
+        app:layout_constraintStart_toEndOf="@+id/siv_item_row_trip_image"
+        app:layout_constraintTop_toBottomOf="@+id/tv_item_row_trip_name"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/tv_item_row_trip_location"
+        style="@style/NarumiTextViewStyle.BodySmall"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/trip_location"
+        android:textColor="@color/neutral_40"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_item_row_trip_location_icon"
+        app:layout_constraintEnd_toStartOf="@+id/civ_item_row_trip_container_arrow_next_icon"
+        app:layout_constraintStart_toEndOf="@+id/iv_item_row_trip_location_icon"
+        app:layout_constraintTop_toTopOf="@+id/iv_item_row_trip_location_icon" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/siv_item_row_trip_image" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_item_row_trip_container_arrow_next_icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/iv_ellipse_solid"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/iv_item_row_trip_arrow_next_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/iv_item_row_trip_arrow_next_icon_description"
+        android:src="@drawable/ic_arrow_next"
+        app:layout_constraintBottom_toBottomOf="@+id/civ_item_row_trip_container_arrow_next_icon"
+        app:layout_constraintEnd_toEndOf="@+id/civ_item_row_trip_container_arrow_next_icon"
+        app:layout_constraintStart_toStartOf="@+id/civ_item_row_trip_container_arrow_next_icon"
+        app:layout_constraintTop_toTopOf="@+id/civ_item_row_trip_container_arrow_next_icon"
+        tools:ignore="ImageContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

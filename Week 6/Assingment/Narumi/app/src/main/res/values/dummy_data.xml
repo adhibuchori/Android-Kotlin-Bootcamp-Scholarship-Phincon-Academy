@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="trip_images">
+        <item>@drawable/iv_trip_image_01</item>
+        <item>@drawable/iv_trip_image_02</item>
+        <item>@drawable/iv_trip_image_03</item>
+        <item>@drawable/iv_trip_image_04</item>
+        <item>@drawable/iv_trip_image_05</item>
+        <item>@drawable/iv_trip_image_06</item>
+        <item>@drawable/iv_trip_image_07</item>
+        <item>@drawable/iv_trip_image_08</item>
+        <item>@drawable/iv_trip_image_09</item>
+    </string-array>
+
+    <string-array name="trip_names">
+        <item>Kotlin Library</item>
+        <item>Android Cafe</item>
+        <item>Compose Sea</item>
+        <item>Kotlin Conference</item>
+        <item>Android Retreat</item>
+        <item>Compose Workshop</item>
+        <item>Kotlin Summit</item>
+        <item>Android Expo</item>
+        <item>Compose Meetup</item>
+    </string-array>
+
+    <string-array name="trip_locations">
+        <item>Kotlin City</item>
+        <item>Android Town</item>
+        <item>Compose Bay</item>
+        <item>Kotlin Village</item>
+        <item>Android Valley</item>
+        <item>Compose Island</item>
+        <item>Kotlin Heights</item>
+        <item>Android Ridge</item>
+        <item>Compose Haven</item>
+    </string-array>
+
+    <string-array name="trip_dates">
+        <item>20 Juni 2025</item>
+        <item>15 Juli 2025</item>
+        <item>10 Agustus 2025</item>
+        <item>5 September 2025</item>
+        <item>1 Oktober 2025</item>
+        <item>25 November 2025</item>
+        <item>20 Desember 2025</item>
+        <item>15 Januari 2026</item>
+        <item>10 Februari 2026</item>
+    </string-array>
+
+    <string-array name="trip_order_dates">
+        <item>1 Juni 2025</item>
+        <item>20 Juni 2025</item>
+        <item>30 Juni 2025</item>
+        <item>10 Juli 2025</item>
+        <item>20 Juli 2025</item>
+        <item>30 Juli 2025</item>
+        <item>10 Agustus 2025</item>
+        <item>20 Agustus 2025</item>
+        <item>30 Agustus 2025</item>
+    </string-array>
+
+    <string-array name="trip_durations">
+        <item>7 Days</item>
+        <item>5 Days</item>
+        <item>10 Days</item>
+        <item>3 Days</item>
+        <item>8 Days</item>
+        <item>6 Days</item>
+        <item>4 Days</item>
+        <item>9 Days</item>
+        <item>11 Days</item>
+    </string-array>
+
+    <string-array name="trip_costs">
+        <item>1000</item>
+        <item>750</item>
+        <item>1200</item>
+        <item>500</item>
+        <item>1100</item>
+        <item>900</item>
+        <item>700</item>
+        <item>1300</item>
+        <item>1400</item>
+    </string-array>
+
+    <string-array name="trip_descriptions">
+        <item>Explore the Kotlin Library: Unlock a world of powerful tools and resources to enhance your development skills. Discover the Kotlin Library: A comprehensive collection of functions and utilities to streamline your coding process.</item>
+        <item>Relax at the Android Cafe: Enjoy a unique blend of coffee and coding in a vibrant atmosphere. Discover the Android Cafe: A haven for developers to unwind and collaborate.</item>
+        <item>Dive into the Compose Sea: Experience the depth of Jetpack Compose with hands-on tutorials and projects. Discover the Compose Sea: An ocean of possibilities for building beautiful UIs.</item>
+        <item>Join the Kotlin Conference: Engage with experts and enthusiasts to expand your knowledge and skills. Discover the latest trends and innovations in the Kotlin world.</item>
+        <item>Retreat to the Android Valley: Recharge with a mix of coding and nature in a serene environment. Discover the Android Valley: A perfect blend of productivity and relaxation.</item>
+        <item>Attend the Compose Workshop: Participate in interactive sessions to enhance your UI development capabilities. Discover the Compose Workshop: A platform for learning and growth.</item>
+        <item>Summit at the Kotlin Heights: Reach new heights in your coding journey with advanced Kotlin sessions. Discover the Kotlin Heights: A summit for ambitious developers.</item>
+        <item>Expo at the Android Ridge: Showcase and discover the latest Android innovations and technologies. Discover the Android Ridge: An expo for cutting-edge advancements.</item>
+        <item>Meetup at the Compose Haven: Connect with fellow developers and share your Compose experiences. Discover the Compose Haven: A place for community and collaboration.</item>
+    </string-array>
+
+    <string-array name="trip_categories">
+        <item>Popular</item>
+        <item>Recommended</item>
+        <item>Popular</item>
+        <item>Recommended</item>
+        <item>Popular</item>
+        <item>Recommended</item>
+        <item>Popular</item>
+        <item>Recommended</item>
+        <item>Popular</item>
+    </string-array>
+</resources>
