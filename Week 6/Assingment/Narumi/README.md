@@ -4,7 +4,7 @@ I'll revise the document to use cleaner, standard markdown syntax:
 
 ## Overview
 
-![Narumi App Preview!](/Narumi-AppPreview.png "Narumi App Preview")
+![Narumi App Preview](/Week%206/Assingment/Narumi/Narumi-AppPreview.png "Narumi App Preview")
 
 鳴海 (Narumi) is a travel app developed to help users search destinations, plan itineraries, make reservations, get recommendations, and validate bookings. This travel application developed for Phincon Academy Assignment Submission 3, designed to simplify trip planning and booking.
 
