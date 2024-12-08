@@ -1,6 +1,4 @@
-I'll revise the document to use cleaner, standard markdown syntax:
-
-# Narumi Travel App Documentation
+# Narumi Travel App
 
 ## Overview
 
